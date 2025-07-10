@@ -9,7 +9,7 @@ Build IronRuby .dll and add an irpack equivalent to cl commands of
   or
   cl /LD foo.c bar.c baz.c /link /out:MyImage.dll
   Prospectively: irpack -b <dir> -o --link <output>
-
+After adding, write tests to confirm functionality!
 
 ==Requirements
 IronRuby 1.1.3 or later.
