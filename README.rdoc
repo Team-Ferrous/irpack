@@ -3,11 +3,11 @@
 irpack converts your IronRuby scripts to a standalone .exe file.
 Generated executable does not require IronRuby, but only .NET Framework or mono.
 TBA:
-Build IronRuby .dll and add an irpack equivalent to cl commands of
-`cl /LD foo.c bar.c baz.c /FeMyImage.dll`
+```Build IronRuby .dll and add an irpack equivalent to cl commands of
+cl /LD foo.c bar.c baz.c /FeMyImage.dll
 or
-`cl /LD foo.c bar.c baz.c /link /out:MyImage.dll`
-Prospectively: irpack -b <dir> -o --link <output>
+cl /LD foo.c bar.c baz.c /link /out:MyImage.dll
+Prospectively: irpack -b <dir> -o --link <output>```
 
 ==Requirements
 IronRuby 1.1.3 or later.
