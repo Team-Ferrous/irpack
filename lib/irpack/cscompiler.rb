@@ -92,7 +92,7 @@ module IRPack
         params.generate_executable = false
         compiler_options << '/target:library'
       else
-        raise ArgumentError, "target must be :exe, :winexe or :library"
+        raise ArgumentError, "target must be :exe, :winexe, :dll, or :library"
       end
       params.compiler_options = compiler_options.join(' ')
       resources.each do |rc|
