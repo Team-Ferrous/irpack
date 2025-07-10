@@ -35,6 +35,8 @@ module IRPack
       opt.on('-o OUTPUTFILE', 'Specify output file name.') {|v| spec.output_file = v }
       opt.on('--window',      'Generate window app.') { spec.target = :winexe }
       opt.on('--console',     'Generate console app.[default]') { spec.target = :exe }
+      opt.on('--lib',         'Generate static library (.lib).') { spec.target = :library }
+      opt.on('--link',        'Generate dynamic link library (.dll).') { spec.target = :dll }
       opt.on('--compress',    'Compress package.') { spec.compress = true }
       opt.on('--complete',    'Embed all standard libraries.') { spec.complete = true }
       opt.on('--no-embed',    'Do not embed IronRuby assemblies.') {|v| spec.embed_assemblies = v }
