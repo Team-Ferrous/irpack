@@ -12,13 +12,13 @@ class IRPack::Rake::GenerateDllTask < ::Rake::TaskLib
   # Task name. default is +exe+.
   attr_accessor :name
   # Spec to generate executable.
-  attr_accessor :exe_spec
+  attr_accessor :dll_spec
 
   # Create tasks that generates exe file.
   # Automatically define the gem if a block is given.
   # If no block is supplied, then +define+
   # needs to be called to define the task.
-  def initialize(exe_spec, name=:dll)
+  def initialize(dll_spec, name=:dll)
     @defined  = false
     @name     = name
     @dll_spec = dll_spec
